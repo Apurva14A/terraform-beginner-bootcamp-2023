@@ -175,3 +175,5 @@ if it is successful you shoud see a json payload  return which looks like this:
 }
 
 ```
+
+We'll need to generate AWS credentials from IAM inorder to use AWS CLI.
