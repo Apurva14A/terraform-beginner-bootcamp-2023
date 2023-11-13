@@ -209,7 +209,15 @@ We can output thsi changeset i.e 'plan' to be passed to apply command .Also, it 
 #### Terraform Apply
 
 `terraform apply`
-This will run a plan based on the changeset passed. Apply will create the infrastructure based on plan.Apply will prompt us 'yes or no'. If we can automatically apply then we have use `--auto-approve` as flag with apply.
+This will run a plan based on the changeset passed. Apply will create the infrastructure based on plan.Apply will prompt us 'yes or no'. 
+
+If we can automatically apply then we have use `terraform apply --auto-approve` as flag with apply.
+
+#### Terraform Destroy
+
+`terraform destroy`
+
+This will destroy the resources of a particular environment.
 
 ### Terraform Lock files
 
