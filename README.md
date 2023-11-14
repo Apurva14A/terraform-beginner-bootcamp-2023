@@ -237,5 +237,37 @@ This file **should not be commited** into your Version Control System(VCS). As i
 
 `.terraform` contains the binaries of the terraform providers.
 
+## Issues with Terraform Cloud and Gitpod 
 
+When attempting to run `terraform login` it will launch wiswig  view to generate a token.However it does not work in Gitpod VsCode in the browser.
+
+The workarouund is to mannually generate a token in Terraform Cloud.
+
+```
+
+```
+
+Then create, open the file mannually here:
+
+```sh
+
+touch /home/gitpod/.terraform.d/credentials.tfrc.json
+open /home/gitpod/.terraform.d/credentials.tfrc.json
+
+```
+
+Provide the following code (replace your token in the file):
+
+```json
+
+{
+  "credentials": {
+    "app.terraform.io": {
+      "token": "Your Terraform Cloud Token"
+    }
+  }
+}
+
+
+```
 
